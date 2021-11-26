@@ -1,0 +1,23 @@
+# ninja log v5
+0	1117	6596336514490368	CMakeFiles/reverse_list.dir/ReverseList.cpp.obj	dc943efe13a75841
+0	616	6596329242658649	CMakeFiles/reverse_list.dir/main.cpp.obj	ba475e41a0fb15d1
+800	960	6596325715817451	reverse_list.exe	1f9903c2fe857d85
+0	337	6596444059951389	CMakeFiles/reverse_list.dir/main.cpp.obj	ba475e41a0fb15d1
+337	472	6596444061045899	reverse_list.exe	aed1d3082eec243c
+1	368	6596444640259045	CMakeFiles/reverse_list.dir/main.cpp.obj	ba475e41a0fb15d1
+368	507	6596444641415576	reverse_list.exe	aed1d3082eec243c
+0	332	6596445133973945	CMakeFiles/reverse_list.dir/main.cpp.obj	ba475e41a0fb15d1
+332	447	6596445134901892	reverse_list.exe	aed1d3082eec243c
+0	8	0	clean	9992afb1f91dc381
+0	367	6596448482947973	CMakeFiles/reverse_list.dir/main.cpp.obj	ba475e41a0fb15d1
+367	467	6596448483771618	reverse_list.exe	aed1d3082eec243c
+0	421	6596479778273325	CMakeFiles/reverse_list.dir/main.cpp.obj	ba475e41a0fb15d1
+422	621	6596479779921061	reverse_list.exe	aed1d3082eec243c
+0	318	6596480570118007	CMakeFiles/reverse_list.dir/main.cpp.obj	ba475e41a0fb15d1
+318	413	6596480570889253	reverse_list.exe	aed1d3082eec243c
+0	353	6596481696338496	CMakeFiles/reverse_list.dir/main.cpp.obj	ba475e41a0fb15d1
+354	448	6596481697100281	reverse_list.exe	aed1d3082eec243c
+1	340	6596481800532166	CMakeFiles/reverse_list.dir/main.cpp.obj	ba475e41a0fb15d1
+340	448	6596481801410855	reverse_list.exe	aed1d3082eec243c
+1	332	6596481993363055	CMakeFiles/reverse_list.dir/main.cpp.obj	ba475e41a0fb15d1
+332	432	6596481994158172	reverse_list.exe	aed1d3082eec243c
