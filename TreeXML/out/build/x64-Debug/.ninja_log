@@ -1,0 +1,6 @@
+# ninja log v5
+6	1138	6596310268756053	CMakeFiles/TreeXML.dir/Tree.cpp.obj	be185ad6a8ba1cee
+1	1148	6596310268854624	CMakeFiles/TreeXML.dir/main.cpp.obj	98e2d6d18bdef7ae
+9	1152	6596310268896065	CMakeFiles/TreeXML.dir/TreeForXML.cpp.obj	a230350b278f2187
+4	1196	6596310269413058	CMakeFiles/TreeXML.dir/XMLReader.cpp.obj	3eb9d812a857552
+1197	1560	6596310272933644	TreeXML.exe	a155036d8517b4eb
