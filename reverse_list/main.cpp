@@ -2,9 +2,7 @@
 #include "ReverseList.h"
 
 int main(void) {
-	
 	ReverseList<int> rl;
-	
 	
 	rl.push_back(1);
 	rl.push_back(2);
@@ -13,13 +11,9 @@ int main(void) {
 	rl.push_back(5);
 
 	rl.print();
-
 	rl.reverse();
-
 	rl.print();
-
 	rl.reverse();
-
 	rl.print();
 
 	return 0;

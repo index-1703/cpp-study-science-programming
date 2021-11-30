@@ -6,7 +6,6 @@ class ReverseList {
 	typedef struct list_t {
 		T data;
 		list_t* next = NULL;
-		list_t* prev = NULL;
 	} list_t;
 
 	list_t* first;
@@ -14,6 +13,7 @@ class ReverseList {
 
 public:
 	ReverseList();
+	~ReverseList();
 
 	size_t size(void);
 
@@ -31,6 +31,18 @@ template<typename T>
 ReverseList<T>::ReverseList()
 	:first(NULL), last(NULL)
 {
+}
+
+template<typename T>
+ReverseList<T>::~ReverseList()
+{
+	list_t* nodes = first;
+	while (nodes != NULL)
+	{
+		list_t* tmp = nodes;
+		nodes = nodes->next;
+		delete tmp;
+	}
 }
 
 template<typename T>
@@ -54,7 +66,6 @@ void ReverseList<T>::push_back(T data)
 
 	if (last != NULL) {
 		last->next = node;
-		node->prev = last;
 	}
 
 	last = node;
@@ -68,8 +79,15 @@ T ReverseList<T>::pop_back(void)
 	}
 	list_t* node = last;
 	T data = node->data;
-	if (node->prev != NULL) {
-		last = node->prev;
+
+	list_t* tmpnode = first;
+	if (first != node && first != NULL) {
+		list_t* tmpnode = first;
+		while (tmpnode->next != node && tmpnode->next != NULL)
+		{
+			tmpnode = tmpnode->next;
+		}
+		last = tmpnode;
 		last->next = NULL;
 	}
 
@@ -92,7 +110,6 @@ void ReverseList<T>::push_front(T data)
 	}
 
 	if (first != NULL) {
-		first->prev = node;
 		node->next = first;
 	}
 
@@ -111,7 +128,6 @@ T ReverseList<T>::pop_front(void)
 
 	if (node->next != NULL) {
 		first = node->next;
-		first->prev = NULL;
 	}
 
 	if (last == node) {
@@ -138,18 +154,19 @@ void ReverseList<T>::print(void)
 template<typename T>
 void ReverseList<T>::reverse(void)
 {
-	list_t* node = first;
+
+	list_t* prevptr = NULL;
+	list_t* nextptr = first;
 
 	list_t* tmp = first;
 	first = last;
 	last = tmp;
 
-	while (node != NULL)
+	while (nextptr != NULL)
 	{
-		list_t* tmp = node->next;
-		node->next = node->prev;
-		node->prev = tmp;
-		node = tmp;
+		list_t* tmp = nextptr->next;
+		nextptr->next = prevptr;
+		prevptr = nextptr;
+		nextptr = tmp;
 	}
-
 }
